@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -124,35 +124,29 @@
 
     h1,
     h2 {
-      font-family: "Source Serif 4", Georgia, serif;
-      font-weight: 500;
+      font-family: "Poppins", Arial, sans-serif;
+      font-weight: 600;
       letter-spacing: -0.035em;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(42px, 6vw, 64px);
-      line-height: 1.05;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.15;
     }
 
     .role {
       margin: 14px 0 0;
       color: var(--teal);
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
-    }
-
-    .affiliation {
-      margin: 3px 0 31px;
-      color: var(--muted);
-      font-size: 15px;
     }
 
     .contact {
       display: grid;
       grid-template-columns: 110px 1fr;
       gap: 8px 14px;
-      margin: 0 0 35px;
+      margin: 31px 0 35px;
       padding: 20px 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
@@ -184,7 +178,7 @@
       margin: 0 0 19px;
       padding-bottom: 14px;
       border-bottom: 1px solid var(--line);
-      font-size: 31px;
+      font-size: 22px;
     }
 
     .timeline {
@@ -215,20 +209,6 @@
       margin: 3px 0 0;
       color: var(--muted);
       font-size: 15px;
-    }
-
-    .expertise {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      padding: 8px 12px;
-      border: 1px solid #b9d2d2;
-      color: #27636a;
-      background: var(--soft);
-      font-size: 13px;
     }
 
     footer {
@@ -301,11 +281,9 @@
 
     <section class="intro">
       <div class="photo">
-        <!-- 사진을 업로드한 후 아래 placeholder 부분을 지우고 img 줄을 사용하세요. -->
 
-        <!--
-        <img src="profile.jpg" alt="Soyoung Kim">
-        -->
+        <!-- 사진 업로드 후 아래 두 줄의 주석을 제거하세요. -->
+        <!-- <img src="profile.jpg" alt="Soyoung Kim"> -->
 
         <div class="photo-placeholder">
           Upload your photo as<br>
@@ -318,10 +296,6 @@
 
         <p class="role">Materials Scientist & Chemical Engineer</p>
 
-        <p class="affiliation">
-          Postdoctoral Researcher · University of Wyoming
-        </p>
-
         <div class="contact">
           <span class="contact-label">Email</span>
           <a href="mailto:asoyoung@umich.edu">
@@ -329,8 +303,7 @@
           </a>
 
           <span class="contact-label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/sygkim"
-             target="_blank">
+          <a href="https://www.linkedin.com/in/sygkim" target="_blank">
             linkedin.com/in/sygkim ↗
           </a>
 
@@ -353,251 +326,222 @@
     </section>
 
     <section>
-  <h2>Education</h2>
+      <h2>Education</h2>
 
-  <div class="timeline">
+      <div class="timeline">
+        <div class="entry">
+          <div class="date">2020</div>
 
-    <div class="entry">
-      <div class="date">2020</div>
+          <div>
+            <p class="entry-title">
+              Ph.D. in Environmental Science and Engineering
+            </p>
 
-      <div>
-        <p class="entry-title">
-          Ph.D. in Environmental Science and Engineering
-        </p>
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology, South Korea
+            </p>
+          </div>
+        </div>
 
-        <p class="entry-place">
-          Gwangju Institute of Science and Technology, South Korea
-        </p>
+        <div class="entry">
+          <div class="date">2014</div>
+
+          <div>
+            <p class="entry-title">
+              M.S. in Environmental Science and Engineering
+            </p>
+
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology, South Korea
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2013</div>
+
+          <div>
+            <p class="entry-title">
+              B.S. in Chemistry & Applied Chemistry
+            </p>
+
+            <p class="entry-place">
+              Hanyang University, South Korea
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="entry">
-      <div class="date">2014 </div>
-
-      <div>
-        <p class="entry-title">
-          M.S. in Environmental Science and Engineering
-        </p>
-
-        <p class="entry-place">
-          Gwangju Institute of Science and Technology, South Korea
-        </p>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="date">2013</div>
-
-      <div>
-        <p class="entry-title">
-          B.S. in Chemistry & Applied Chemistry
-        </p>
-
-        <p class="entry-place">
-          Hanyang University, South Korea
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <section>
-  <h2>Professional Experience</h2>
+      <h2>Professional Experience</h2>
 
-  <div class="timeline">
+      <div class="timeline">
+        <div class="entry">
+          <div class="date">Aug 2026 – Present</div>
 
-    <!-- 경력 1: 현재 직장 -->
-    <div class="entry">
-      <div class="date">August 2026 – Present</div>
+          <div>
+            <p class="entry-title">Research Scientist</p>
 
-      <div>
-        <p class="entry-title">
-          Research Scientist
-        </p>
+            <p class="entry-place">
+              Michigan, USA
+            </p>
+          </div>
+        </div>
 
-        <p class="entry-place">
-          Michigan
-        </p>
+        <div class="entry">
+          <div class="date">Jun 2024 – Apr 2026</div>
+
+          <div>
+            <p class="entry-title">Research Associate</p>
+
+            <p class="entry-place">
+              University of Wyoming, Laramie, WY, USA
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">Jun 2022 – May 2024</div>
+
+          <div>
+            <p class="entry-title">Postdoctoral Research Fellow</p>
+
+            <p class="entry-place">
+              University of Michigan, Ann Arbor, MI, USA
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">Mar 2020 – Feb 2022</div>
+
+          <div>
+            <p class="entry-title">Research Fellow</p>
+
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology, South Korea
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">Mar 2013 – Feb 2020</div>
+
+          <div>
+            <p class="entry-title">Graduate Research Assistant</p>
+
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology, South Korea
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 경력 2 -->
-    <div class="entry">
-      <div class="date">June 2024 – April 2026</div>
+    <section>
+      <h2>Awards & Fellowships</h2>
 
-      <div>
-        <p class="entry-title">
-          Research Associate
-        </p>
+      <div class="timeline">
+        <div class="entry">
+          <div class="date">2021</div>
 
-        <p class="entry-place">
-          University of Wyoming, Laramie, WY
-        </p>
+          <div>
+            <p class="entry-title">
+              GIST Young Scientist Fellowship
+            </p>
+
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2020</div>
+
+          <div>
+            <p class="entry-title">
+              Young Investigator Award
+            </p>
+
+            <p class="entry-place">
+              Korean Society of Environmental Engineers
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2013 – 2019</div>
+
+          <div>
+            <p class="entry-title">
+              Government Scholarship
+            </p>
+
+            <p class="entry-place">
+              Ministry of Science and Technology, South Korea
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2013, 2016</div>
+
+          <div>
+            <p class="entry-title">
+              Global University Project Scholarship
+            </p>
+
+            <p class="entry-place">
+              Gwangju Institute of Science and Technology
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2015</div>
+
+          <div>
+            <p class="entry-title">
+              Student Presenter Award
+            </p>
+
+            <p class="entry-place">
+              249th ACS National Meeting and Exposition
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2012</div>
+
+          <div>
+            <p class="entry-title">
+              Grand Prize
+            </p>
+
+            <p class="entry-place">
+              7th Capstone Design Fair, Hanyang University
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="date">2011 – 2012</div>
+
+          <div>
+            <p class="entry-title">
+              Honor Scholarship
+            </p>
+
+            <p class="entry-place">
+              Hanyang University
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- 경력 3 -->
-    <div class="entry">
-      <div class="date">June 2022 – May 2024</div>
-
-      <div>
-        <p class="entry-title">
-          Postdoctoral Research Fellow
-        </p>
-
-        <p class="entry-place">
-          University of Michigan, Ann Arbor, MI
-        </p>
-      </div>
-    </div>
-
-    <!-- 경력 4 -->
-    <div class="entry">
-      <div class="date">March 2020 – February 2022</div>
-
-      <div>
-        <p class="entry-title">
-          Research Fellow
-        </p>
-
-        <p class="entry-place">
-          Gwangju Institute of Science and Technology, South Korea
-        </p>
-      </div>
-    </div>
-
-    <!-- 경력 5 -->
-    <div class="entry">
-      <div class="date">March 2013 – Februery 2020 </div>
-
-      <div>
-        <p class="entry-title">
-          Graduate Research Assistant
-        </p>
-
-        <p class="entry-place">
-          Gwangju Institute of Science and Technology, South Korea
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Awards & Fellowships</h2>
-
-  <div class="timeline">
-
-    <!-- 수상 또는 펠로십 1 -->
-    <div class="entry">
-      <div class="date">2021</div>
-
-      <div>
-        <p class="entry-title">
-          GIST Young Scientist Fellowship
-        </p>
-
-        <p class="entry-place">
-          GIST
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 2 -->
-    <div class="entry">
-      <div class="date">2020</div>
-
-      <div>
-        <p class="entry-title">
-          Young Investigator Award
-        </p>
-
-        <p class="entry-place">
-          Korean Society of Environmental Engineers
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 3 -->
-    <div class="entry">
-      <div class="date">2013 - 2019</div>
-
-      <div>
-        <p class="entry-title">
-          Government Scholarship
-        </p>
-
-        <p class="entry-place">
-          Ministry of Science and Technology, South Korea
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 4 -->
-    <div class="entry">
-      <div class="date">2013, 2016</div>
-
-      <div>
-        <p class="entry-title">
-          Global University Project Scholarship
-        </p>
-
-        <p class="entry-place">
-          GIST
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 5 -->
-    <div class="entry">
-      <div class="date">2015</div>
-
-      <div>
-        <p class="entry-title">
-          Student Presenter Award
-        </p>
-
-        <p class="entry-place">
-          249th ACS National Meeting and Exposition
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 6 -->
-    <div class="entry">
-      <div class="date">2012</div>
-
-      <div>
-        <p class="entry-title">
-          Grand Prize
-        </p>
-
-        <p class="entry-place">
-          7th Capstone Design Fair, Hanyang University
-        </p>
-      </div>
-    </div>
-
-    <!-- 수상 또는 펠로십 8 -->
-    <div class="entry">
-      <div class="date">2011 - 2012</div>
-
-      <div>
-        <p class="entry-title">
-          Honor Scholarship
-        </p>
-
-        <p class="entry-place">
-          Hanyang University
-        </p>
-      </div>
-    </div>
-    
-
-  </div>
-</section>
+    </section>
   </main>
 
   <footer>
