@@ -3,63 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soyoung Kim | Environmental Scientist</title>
+  <title>Soyoung Kim, Ph.D.</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      max-width: 850px;
-      margin: 70px auto;
-      padding: 0 24px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #263238;
+      margin: 0;
+      background: #ffffff;
+      color: #172b36;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
     }
-    h1 {
-      margin-bottom: 4px;
-      color: #0b3d5c;
-    }
-    h2 {
-      margin-top: 38px;
-      color: #0b3d5c;
-      border-bottom: 1px solid #d9e2e8;
-      padding-bottom: 6px;
-    }
-    .subtitle {
-      color: #607d8b;
-      font-size: 1.1em;
-      margin-top: 0;
-    }
-    .keywords {
-      color: #0b5b7a;
-    }
-    a {
-      color: #006d9c;
-    }
-  </style>
-</head>
-<body>
-  <h1>Soyoung Kim, Ph.D.</h1>
-  <p class="subtitle">Materials Scientist & Chemical Engineer</p>
 
-  <h2>About</h2>
-  <p>
-    I am a materials scientist and chemical engineer developing functional
-    materials and separation technologies for environmental and energy
-    applications.
-  </p>
+    header {
+      width: 100%;
+      border-bottom: 1px solid #dfe7e9;
+      background: #ffffff;
+    }
 
-  <h2>Research Interests</h2>
-  <p class="keywords">
-    Water Treatment · PFAS Remediation · Adsorption · Porous Materials ·
-    Electrospun Nanofibers · Resource Recovery · Energy Harvesting/Storage
-  </p>
+    nav {
+      width: min(1120px, 92%);
+      height: 74px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-  <h2>Current Position</h2>
-  <p>Research Fellow, University of Michigan</p>
+    .name {
+      color: #123f4d;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+    }
 
-  <h2>Contact</h2>
-  <p>
-    Email: asoyoung@umich.edu<br>
-    LinkedIn: <a href="https://www.linkedin.com/">www.linkedin.com/in/sygkim</a>
-  </p>
-</body>
-</html>
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .menu a {
+      color: #42565d;
+      font-size: 0.93rem;
+      text-decoration: none;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      color: #087278;
+      font-weight: 700;
+    }
+
+    @media (max-width: 560px) {
+      nav {
+        height:
