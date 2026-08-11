@@ -1,6 +1,461 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="soyoung.html">Soyoung</a>
-  <a href="research.html">Research</a>
-  <a href="achievement.html">Achievements</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Achievements | Soyoung Kim, Ph.D.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #192d35;
+      --muted: #607078;
+      --line: #dce5e7;
+      --teal: #087278;
+      --soft: #f4f8f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ffffff;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    nav {
+      width: min(1120px, 92%);
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-name {
+      color: #123f4d;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      color: #42565d;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .menu a:hover,
+    .menu .active {
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    main {
+      width: min(920px, 92%);
+      margin: 0 auto;
+      padding: 66px 0 80px;
+    }
+
+    .breadcrumb {
+      margin: 0 0 21px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(42px, 6vw, 65px);
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .note {
+      margin: 18px 0 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+      margin-bottom: 11px;
+    }
+
+    .stat {
+      min-height: 126px;
+      padding: 23px 20px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .stat-number {
+      display: block;
+      color: var(--teal);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    .stat-label {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .asof {
+      margin: 0 0 63px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .asof a {
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 43px 0 4px;
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      column-gap: 16px;
+      padding: 17px 0 19px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .number {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 700;
+      padding-top: 3px;
+    }
+
+    .citation {
+      margin: 0;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 17px;
+      line-height: 1.58;
+    }
+
+    .citation strong {
+      font-weight: 600;
+    }
+
+    .journal {
+      font-style: italic;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer div {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      main {
+        padding-top: 48px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .publication {
+        grid-template-columns: 34px 1fr;
+        column-gap: 10px;
+      }
+
+      .citation {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="site-name" href="index.html">SOYOUNG KIM, Ph.D.</a>
+
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="soyoung.html">Soyoung</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="achievement.html">Achievement</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb">Achievements · Publications</p>
+
+    <h1>Publications</h1>
+
+    <p class="note">
+      † co-first author &nbsp; · &nbsp; * corresponding author
+    </p>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-number">494</span>
+        <span class="stat-label">Total citations</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">11</span>
+        <span class="stat-label">h-index</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">11</span>
+        <span class="stat-label">i10-index</span>
+      </div>
+    </section>
+
+    <p class="asof">
+      As of August 2026 ·
+      <a href="https://scholar.google.com/citations?user=BurOm10AAAAJ&hl=en"
+         target="_blank">
+        Google Scholar ↗
+      </a>
+    </p>
+
+    <section>
+      <h2>Selected Journal Publications</h2>
+
+      <h3>2024</h3>
+
+      <article class="publication">
+        <div class="number">[11]</div>
+        <div>
+          <p class="citation">
+            M. Kim, E. Yang, Y. Liang, <strong>S. Kim</strong>, J. Byun,
+            H. Kim, H. Choi, et al. “Rational Design of a Necklace-like
+            ZIF-67/Poly(vinylidene fluoride) Electrospun Nanofiber Hybrid
+            Membrane for Simultaneous Removal of PM₀.₃ and SO₂.”
+            <span class="journal">
+              ACS Applied Materials & Interfaces
+            </span>, 16(12), 15348–15361.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[10]</div>
+        <div>
+          <p class="citation">
+            A. Asserghine†, <strong>S. Kim†</strong>, T. P. Vaid,
+            A. Santiago-Carboney, A. J. McNeil, et al.
+            “Ionic Strength Impacts Charge Capacity in a Redox-Matched
+            Flow Battery: From Single-Particle Interrogation to Battery Cycling.”
+            <span class="journal">ACS Energy Letters</span>, 9, 2826–2831.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[9]</div>
+        <div>
+          <p class="citation">
+            Y. Liang, M. Kim, E. Yang, M. Septiyanti, <strong>S. Kim</strong>,
+            H. Kim, J. Byun, et al. “Tailoring Asymmetric Wettability of
+            Janus Nanofiber Membranes for Directional Oil Transport and Oil
+            Capture from Oil/Water Mixtures and Oil-in-Water Emulsions.”
+            <span class="journal">Chemical Engineering Journal</span>,
+            496, 154087.
+          </p>
+        </div>
+      </article>
+
+      <h3>2023</h3>
+
+      <article class="publication">
+        <div class="number">[8]</div>
+        <div>
+          <p class="citation">
+            Y. Liang, E. Yang, M. Kim, <strong>S. Kim</strong>, H. Kim,
+            J. Byun, N. Yanar, H. Choi. “Lotus Leaf-like SiO₂ Nanofiber
+            Coating on Polyvinylidene Fluoride Nanofiber Membrane for
+            Water-in-Oil Emulsion Separation and Antifouling Enhancement.”
+            <span class="journal">Chemical Engineering Journal</span>,
+            452, 139710.
+          </p>
+        </div>
+      </article>
+
+      <h3>2021</h3>
+
+      <article class="publication">
+        <div class="number">[7]</div>
+        <div>
+          <p class="citation">
+            <strong>S. Kim</strong>, Y. Liang, S. Kang, H. Choi.
+            “Solar-assisted Smart Nanofibrous Membranes for Atmospheric
+            Water Harvesting.”
+            <span class="journal">Chemical Engineering Journal</span>,
+            425, 131601.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[6]</div>
+        <div>
+          <p class="citation">
+            M. Kim, <strong>S. Kim*</strong>, Y. C. Seong, K. H. Yang,
+            H. Choi*. “Multiwalled Carbon Nanotube
+            Buckypaper/Polyacrylonitrile Nanofiber Composite Membranes for
+            Electromagnetic Interference Shielding.”
+            <span class="journal">ACS Applied Nano Materials</span>,
+            4(1), 729–738.
+          </p>
+        </div>
+      </article>
+
+      <h3>2020</h3>
+
+      <article class="publication">
+        <div class="number">[5]</div>
+        <div>
+          <p class="citation">
+            Y. Liang, <strong>S. Kim</strong>, E. Yang, H. Choi.
+            “Omni-directional Protected Nanofiber Membranes by Surface
+            Segregation of PDMS-terminated Triblock Copolymer for
+            High-efficiency Oil/Water Emulsion Separation.”
+            <span class="journal">ACS Applied Materials & Interfaces</span>,
+            12(22), 25324–25333.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[4]</div>
+        <div>
+          <p class="citation">
+            K. A. S. Bornillo†, <strong>S. Kim†</strong>, H. Choi.
+            “Cu(II) Removal Using Electrospun Dual-responsive
+            Polyethersulfone–Poly(dimethyl amino)ethyl Methacrylate Blend
+            Nanofibers.”
+            <span class="journal">Chemosphere</span>, 242, 125287.
+          </p>
+        </div>
+      </article>
+
+      <h3>2019</h3>
+
+      <article class="publication">
+        <div class="number">[3]</div>
+        <div>
+          <p class="citation">
+            Y. Liang, <strong>S. Kim</strong>, P. Kallem, H. Choi.
+            “Capillary Effect in Janus Electrospun Nanofiber Membrane for
+            Oil/Water Emulsion Separation.”
+            <span class="journal">Chemosphere</span>, 221, 479–485.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[2]</div>
+        <div>
+          <p class="citation">
+            <strong>S. Kim</strong>, H. Choi. “Switchable Wettability of
+            Thermoresponsive Core–shell Nanofibers for Water Capture and
+            Release.”
+            <span class="journal">
+              ACS Sustainable Chemistry & Engineering
+            </span>, 7(24), 19870–19879.
+          </p>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="number">[1]</div>
+        <div>
+          <p class="citation">
+            <strong>S. Kim</strong>, H. Park, H. Choi. “Maneuvering the
+            Ordered Mesoporosity of Electrospun Silica Nanofibers for Water
+            Harvesting.”
+            <span class="journal">
+              Microporous and Mesoporous Materials
+            </span>, 281, 23–31.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Soyoung Kim, Ph.D.</div>
+  </footer>
+</body>
+</html>
