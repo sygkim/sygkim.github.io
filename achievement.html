@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -16,7 +16,6 @@
       --muted: #607078;
       --line: #dce5e7;
       --teal: #087278;
-      --soft: #f4f8f8;
     }
 
     * {
@@ -89,61 +88,24 @@
 
     h1 {
       margin: 0;
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: clamp(42px, 6vw, 65px);
-      font-weight: 500;
-      letter-spacing: -0.04em;
-      line-height: 1;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      line-height: 1.3;
     }
 
     .note {
-      margin: 18px 0 40px;
+      margin: 14px 0 12px;
       color: var(--muted);
       font-size: 14px;
     }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border-top: 1px solid var(--line);
-      border-left: 1px solid var(--line);
-      margin-bottom: 11px;
+    .scholar-link {
+      margin: 0 0 45px;
+      font-size: 13px;
     }
 
-    .stat {
-      min-height: 126px;
-      padding: 23px 20px;
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      background: var(--soft);
-    }
-
-    .stat-number {
-      display: block;
-      color: var(--teal);
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: 38px;
-      line-height: 1;
-    }
-
-    .stat-label {
-      display: block;
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .asof {
-      margin: 0 0 63px;
-      color: var(--muted);
-      font-size: 12px;
-      text-align: right;
-    }
-
-    .asof a {
+    .scholar-link a {
       color: var(--teal);
       font-weight: 700;
     }
@@ -152,9 +114,8 @@
       margin: 0 0 18px;
       padding-bottom: 14px;
       border-bottom: 1px solid var(--line);
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: 30px;
-      font-weight: 500;
+      font-size: 22px;
+      font-weight: 600;
       letter-spacing: -0.02em;
     }
 
@@ -182,13 +143,22 @@
 
     .citation {
       margin: 0;
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: 17px;
-      line-height: 1.58;
+      font-size: 15px;
+      line-height: 1.7;
     }
 
     .citation strong {
+      font-weight: 700;
+    }
+
+    .paper-title {
+      color: var(--ink);
       font-weight: 600;
+    }
+
+    .paper-title:hover {
+      color: var(--teal);
+      text-decoration: underline;
     }
 
     .journal {
@@ -225,17 +195,13 @@
         padding-top: 48px;
       }
 
-      .stats {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       .publication {
         grid-template-columns: 34px 1fr;
         column-gap: 10px;
       }
 
       .citation {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   </style>
@@ -256,7 +222,7 @@
   </header>
 
   <main>
-    <p class="breadcrumb">achievement · Publications</p>
+    <p class="breadcrumb">Achievement · Publications</p>
 
     <h1>Publications</h1>
 
@@ -264,28 +230,10 @@
       † co-first author &nbsp; · &nbsp; * corresponding author
     </p>
 
-    <section class="stats">
-      <div class="stat">
-        <span class="stat-number">494</span>
-        <span class="stat-label">Total citations</span>
-      </div>
-
-      <div class="stat">
-        <span class="stat-number">11</span>
-        <span class="stat-label">h-index</span>
-      </div>
-
-      <div class="stat">
-        <span class="stat-number">11</span>
-        <span class="stat-label">i10-index</span>
-      </div>
-    </section>
-
-    <p class="asof">
-      As of August 2026 ·
+    <p class="scholar-link">
       <a href="https://scholar.google.com/citations?user=BurOm10AAAAJ&hl=en"
          target="_blank">
-        Google Scholar ↗
+        View all publications on Google Scholar ↗
       </a>
     </p>
 
@@ -296,12 +244,19 @@
 
       <article class="publication">
         <div class="number">[11]</div>
+
         <div>
           <p class="citation">
-            M. Kim, E. Yang, Y. Liang, <strong>S. Kim</strong>, J. Byun,
-            H. Kim, H. Choi, et al. “Rational Design of a Necklace-like
-            ZIF-67/Poly(vinylidene fluoride) Electrospun Nanofiber Hybrid
-            Membrane for Simultaneous Removal of PM₀.₃ and SO₂.”
+            Minbeom Kim, Eunmok Yang, Yejin Liang,
+            <strong>Soyoung Kim</strong>, Jaehyun Byun,
+            Hyeonseo Kim, Heechul Choi.
+            <a class="paper-title"
+               href="https://doi.org/10.1021/acsami.4c00523"
+               target="_blank">
+              “Rational Design of a Necklace-like ZIF-67/Poly(vinylidene
+              fluoride) Electrospun Nanofiber Hybrid Membrane for
+              Simultaneous Removal of PM₀.₃ and SO₂.”
+            </a>
             <span class="journal">
               ACS Applied Materials & Interfaces
             </span>, 16(12), 15348–15361.
@@ -311,25 +266,41 @@
 
       <article class="publication">
         <div class="number">[10]</div>
+
         <div>
           <p class="citation">
-            A. Asserghine†, <strong>S. Kim†</strong>, T. P. Vaid,
-            A. Santiago-Carboney, A. J. McNeil, et al.
-            “Ionic Strength Impacts Charge Capacity in a Redox-Matched
-            Flow Battery: From Single-Particle Interrogation to Battery Cycling.”
-            <span class="journal">ACS Energy Letters</span>, 9, 2826–2831.
+            Abdelilah Asserghine†, <strong>Soyoung Kim†</strong>,
+            Thomas P. Vaid, Armando Santiago-Carboney,
+            Anne J. McNeil*, Joaquín Rodríguez-López*.
+            <a class="paper-title"
+               href="https://doi.org/10.1021/acsenergylett.4c00819"
+               target="_blank">
+              “Ionic Strength Impacts Charge Capacity in a Redox-Matched
+              Flow Battery: From Single-Particle Interrogation to
+              Battery Cycling.”
+            </a>
+            <span class="journal">ACS Energy Letters</span>,
+            9(6), 2826–2831.
           </p>
         </div>
       </article>
 
       <article class="publication">
         <div class="number">[9]</div>
+
         <div>
           <p class="citation">
-            Y. Liang, M. Kim, E. Yang, M. Septiyanti, <strong>S. Kim</strong>,
-            H. Kim, J. Byun, et al. “Tailoring Asymmetric Wettability of
-            Janus Nanofiber Membranes for Directional Oil Transport and Oil
-            Capture from Oil/Water Mixtures and Oil-in-Water Emulsions.”
+            Yejin Liang, Minbeom Kim, Eunmok Yang,
+            Melati Septiyanti, <strong>Soyoung Kim</strong>,
+            Hyeonseo Kim, Jaehyun Byun,
+            Kateryne Ccama Mamani, Heechul Choi.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.cej.2024.154087"
+               target="_blank">
+              “Tailoring Asymmetric Wettability of Janus Nanofiber Membranes
+              for Directional Oil Transport and Oil Capture from Oil/Water
+              Mixtures and Oil-in-Water Emulsions.”
+            </a>
             <span class="journal">Chemical Engineering Journal</span>,
             496, 154087.
           </p>
@@ -340,12 +311,19 @@
 
       <article class="publication">
         <div class="number">[8]</div>
+
         <div>
           <p class="citation">
-            Y. Liang, E. Yang, M. Kim, <strong>S. Kim</strong>, H. Kim,
-            J. Byun, N. Yanar, H. Choi. “Lotus Leaf-like SiO₂ Nanofiber
-            Coating on Polyvinylidene Fluoride Nanofiber Membrane for
-            Water-in-Oil Emulsion Separation and Antifouling Enhancement.”
+            Yejin Liang, Eunmok Yang, Minbeom Kim,
+            <strong>Soyoung Kim</strong>, Hyeonseo Kim,
+            Jaehyun Byun, Numan Yanar, Heechul Choi.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.cej.2022.139710"
+               target="_blank">
+              “Lotus Leaf-like SiO₂ Nanofiber Coating on Polyvinylidene
+              Fluoride Nanofiber Membrane for Water-in-Oil Emulsion
+              Separation and Antifouling Enhancement.”
+            </a>
             <span class="journal">Chemical Engineering Journal</span>,
             452, 139710.
           </p>
@@ -356,11 +334,17 @@
 
       <article class="publication">
         <div class="number">[7]</div>
+
         <div>
           <p class="citation">
-            <strong>S. Kim</strong>, Y. Liang, S. Kang, H. Choi.
-            “Solar-assisted Smart Nanofibrous Membranes for Atmospheric
-            Water Harvesting.”
+            <strong>Soyoung Kim</strong>, Yejin Liang,
+            Seoktae Kang, Heechul Choi.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.cej.2021.131601"
+               target="_blank">
+              “Solar-assisted Smart Nanofibrous Membranes for Atmospheric
+              Water Harvesting.”
+            </a>
             <span class="journal">Chemical Engineering Journal</span>,
             425, 131601.
           </p>
@@ -369,12 +353,18 @@
 
       <article class="publication">
         <div class="number">[6]</div>
+
         <div>
           <p class="citation">
-            M. Kim, <strong>S. Kim*</strong>, Y. C. Seong, K. H. Yang,
-            H. Choi*. “Multiwalled Carbon Nanotube
-            Buckypaper/Polyacrylonitrile Nanofiber Composite Membranes for
-            Electromagnetic Interference Shielding.”
+            Minbeom Kim, <strong>Soyoung Kim*</strong>,
+            Yu Chang Seong, Kwang-Hoon Yang, Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1021/acsanm.0c03040"
+               target="_blank">
+              “Multiwalled Carbon Nanotube Buckypaper/Polyacrylonitrile
+              Nanofiber Composite Membranes for Electromagnetic
+              Interference Shielding.”
+            </a>
             <span class="journal">ACS Applied Nano Materials</span>,
             4(1), 729–738.
           </p>
@@ -385,27 +375,41 @@
 
       <article class="publication">
         <div class="number">[5]</div>
+
         <div>
           <p class="citation">
-            Y. Liang, <strong>S. Kim</strong>, E. Yang, H. Choi.
-            “Omni-directional Protected Nanofiber Membranes by Surface
-            Segregation of PDMS-terminated Triblock Copolymer for
-            High-efficiency Oil/Water Emulsion Separation.”
-            <span class="journal">ACS Applied Materials & Interfaces</span>,
-            12(22), 25324–25333.
+            Yejin Liang, <strong>Soyoung Kim</strong>,
+            Eunmok Yang, Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1021/acsami.0c05559"
+               target="_blank">
+              “Omni-Directional Protected Nanofiber Membranes by Surface
+              Segregation of PDMS-Terminated Triblock Copolymer for
+              High-Efficiency Oil/Water Emulsion Separation.”
+            </a>
+            <span class="journal">
+              ACS Applied Materials & Interfaces
+            </span>, 12(22), 25324–25333.
           </p>
         </div>
       </article>
 
       <article class="publication">
         <div class="number">[4]</div>
+
         <div>
           <p class="citation">
-            K. A. S. Bornillo†, <strong>S. Kim†</strong>, H. Choi.
-            “Cu(II) Removal Using Electrospun Dual-responsive
-            Polyethersulfone–Poly(dimethyl amino)ethyl Methacrylate Blend
-            Nanofibers.”
-            <span class="journal">Chemosphere</span>, 242, 125287.
+            Kristal A. S. Bornillo†, <strong>Soyoung Kim†</strong>,
+            Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.chemosphere.2019.125287"
+               target="_blank">
+              “Cu(II) Removal Using Electrospun Dual-Responsive
+              Polyethersulfone-Poly(dimethyl amino)ethyl Methacrylate
+              Blend Nanofibers.”
+            </a>
+            <span class="journal">Chemosphere</span>,
+            242, 125287.
           </p>
         </div>
       </article>
@@ -414,23 +418,35 @@
 
       <article class="publication">
         <div class="number">[3]</div>
+
         <div>
           <p class="citation">
-            Y. Liang, <strong>S. Kim</strong>, P. Kallem, H. Choi.
-            “Capillary Effect in Janus Electrospun Nanofiber Membrane for
-            Oil/Water Emulsion Separation.”
-            <span class="journal">Chemosphere</span>, 221, 479–485.
+            Yejin Liang, <strong>Soyoung Kim</strong>,
+            Parashuram Kallem, Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.chemosphere.2019.01.048"
+               target="_blank">
+              “Capillary Effect in Janus Electrospun Nanofiber Membrane
+              for Oil/Water Emulsion Separation.”
+            </a>
+            <span class="journal">Chemosphere</span>,
+            221, 479–485.
           </p>
         </div>
       </article>
 
       <article class="publication">
         <div class="number">[2]</div>
+
         <div>
           <p class="citation">
-            <strong>S. Kim</strong>, H. Choi. “Switchable Wettability of
-            Thermoresponsive Core–shell Nanofibers for Water Capture and
-            Release.”
+            <strong>Soyoung Kim</strong>, Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1021/acssuschemeng.9b05273"
+               target="_blank">
+              “Switchable Wettability of Thermoresponsive Core–Shell
+              Nanofibers for Water Capture and Release.”
+            </a>
             <span class="journal">
               ACS Sustainable Chemistry & Engineering
             </span>, 7(24), 19870–19879.
@@ -440,11 +456,16 @@
 
       <article class="publication">
         <div class="number">[1]</div>
+
         <div>
           <p class="citation">
-            <strong>S. Kim</strong>, H. Park, H. Choi. “Maneuvering the
-            Ordered Mesoporosity of Electrospun Silica Nanofibers for Water
-            Harvesting.”
+            <strong>Soyoung Kim</strong>, Hosik Park, Heechul Choi*.
+            <a class="paper-title"
+               href="https://doi.org/10.1016/j.micromeso.2019.02.037"
+               target="_blank">
+              “Maneuvering the Ordered Mesoporosity of Electrospun Silica
+              Nanofibers for Water Harvesting.”
+            </a>
             <span class="journal">
               Microporous and Mesoporous Materials
             </span>, 281, 23–31.
@@ -455,7 +476,7 @@
   </main>
 
   <footer>
-    <div>© 2026 Soyoung Kim, Ph.D.</div>
+    <div>© 2026 Soyoung Kim</div>
   </footer>
 </body>
 </html>
