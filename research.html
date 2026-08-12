@@ -1,6 +1,374 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="soyoung.html">Soyoung</a>
-  <a href="research.html">Research</a>
-  <a href="achievement.html">Achievements</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research | Soyoung Kim, Ph.D.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #192d35;
+      --muted: #607078;
+      --line: #dce5e7;
+      --teal: #087278;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    nav {
+      width: min(1120px, 92%);
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-name {
+      color: #123f4d;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      color: #42565d;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .menu a:hover,
+    .menu .active {
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    main {
+      width: min(920px, 92%);
+      margin: 0 auto;
+      padding: 66px 0 80px;
+    }
+
+    .breadcrumb {
+      margin: 0 0 21px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    h1 {
+      margin: 0 0 34px;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .vision-image {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 42px;
+      display: block;
+      border: 1px solid var(--line);
+    }
+
+    .vision {
+      width: min(760px, 100%);
+      margin: 0 auto;
+    }
+
+    .vision h2 {
+      margin: 0 0 20px;
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.45;
+    }
+
+    .vision p {
+      margin: 0 0 19px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .projects {
+      margin-top: 70px;
+      padding-top: 5px;
+    }
+
+    .projects h2 {
+      margin: 0 0 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project-number {
+      color: var(--teal);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .project h3 {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .project p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .keywords {
+      margin-top: 12px !important;
+      color: var(--teal) !important;
+      font-size: 12px !important;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer div {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      main {
+        padding-top: 48px;
+      }
+
+      .project {
+        grid-template-columns: 45px 1fr;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="site-name" href="index.html">SOYOUNG KIM, Ph.D.</a>
+
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="soyoung.html">Soyoung</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="achievement.html">Achievement</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb">Research</p>
+
+    <h1>Research</h1>
+
+    <img class="vision-image"
+         src="assets/images/resaerchvision.png"
+         alt="Research vision for water, resource recovery, and energy technologies">
+
+    <section class="vision">
+      <h2>
+        Advanced functional materials and electrochemical flow systems
+        for sustainable water treatment, resource recovery, and energy technologies.
+      </h2>
+
+      <p>
+        My research vision is to develop advanced functional materials and
+        electrochemical flow systems for sustainable water treatment, resource
+        recovery, and energy technologies. My work focuses on rationally
+        designing porous, redox-active, and hybrid materials with tailored
+        composition, pore architecture, surface functionality, and interfacial
+        chemistry to control ion transport, molecular selectivity, and
+        electrochemical reactivity under continuous-flow conditions.
+      </p>
+
+      <p>
+        A central objective of my research is to establish mechanistic
+        relationships between material structure, dynamic interfacial processes,
+        and reactor-scale performance. By integrating materials synthesis with
+        electrochemical analysis, flow-reactor engineering, and quantitative
+        chemical measurements, I aim to transform empirical material screening
+        into predictive and scalable system design.
+      </p>
+
+      <p>
+        For PFAS and other emerging contaminants, I will develop
+        electrochemically assisted adsorption, separation, and transformation
+        platforms that couple functional materials with high-resolution mass
+        spectrometry, suspect screening, and non-targeted analysis. This
+        integrated workflow will evaluate not only the removal of regulated
+        target compounds, but also contaminant fate, transformation-product
+        formation, and overall chemical safety across known and previously
+        unrecognized species.
+      </p>
+
+      <p>
+        Leveraging these shared materials-by-interface-by-reactor design
+        principles, I will extend my approach to flow batteries,
+        electrochemical separations, and energy-harvesting systems. By
+        engineering charge-transfer pathways, ion-selective transport, and
+        long-term electrode stability, my research will advance efficient and
+        durable technologies that connect molecular-level materials innovation
+        with practical deployment in water and energy infrastructure.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-number">01</div>
+
+        <div>
+          <h3>Materials-by-Interface-by-Reactor Design</h3>
+
+          <p>
+            Developing porous, redox-active, and hybrid functional materials
+            with controlled composition, pore architecture, surface chemistry,
+            and interfacial properties. This project connects molecular-scale
+            materials design with ion transport, molecular selectivity, and
+            continuous-flow reactor performance.
+          </p>
+
+          <p class="keywords">
+            Porous Materials · Redox-Active Materials · Hybrid Materials ·
+            Interfacial Chemistry · Flow Reactors
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-number">02</div>
+
+        <div>
+          <h3>PFAS & Emerging Contaminant Treatment</h3>
+
+          <p>
+            Developing electrochemically assisted adsorption, separation, and
+            transformation platforms for PFAS and emerging contaminants.
+            High-resolution mass spectrometry, suspect screening, and
+            non-targeted analysis are integrated to evaluate removal,
+            transformation products, contaminant fate, and chemical safety.
+          </p>
+
+          <p class="keywords">
+            PFAS · Emerging Contaminants · Adsorption · LC-MS/MS ·
+            Suspect Screening · Non-Targeted Analysis
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-number">03</div>
+
+        <div>
+          <h3>Electrochemical Separations & Resource Recovery</h3>
+
+          <p>
+            Designing ion-selective materials and electrochemical processes
+            for the recovery of valuable resources from complex aqueous
+            systems. This work focuses on controlling charge-transfer
+            pathways, selective ion transport, and material stability under
+            continuous-flow operating conditions.
+          </p>
+
+          <p class="keywords">
+            Lithium Recovery · Ion-Selective Transport · LDHs ·
+            Aqueous Separation · Resource Recovery
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-number">04</div>
+
+        <div>
+          <h3>Flow Batteries & Sustainable Energy Systems</h3>
+
+          <p>
+            Advancing durable electrochemical energy technologies through
+            redox-active materials, optimized electrolyte systems, and
+            long-term electrode stability. This project links electrochemical
+            characterization with flow-battery and energy-harvesting system
+            design.
+          </p>
+
+          <p class="keywords">
+            Redox Flow Batteries · Electrolytes · Charge Transfer ·
+            Energy Storage · Energy Harvesting
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Soyoung Kim</div>
+  </footer>
+</body>
+</html>
