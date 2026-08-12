@@ -27,6 +27,7 @@
       background: #ffffff;
       color: var(--ink);
       font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.65;
     }
 
     a {
@@ -86,11 +87,8 @@
       letter-spacing: 0.03em;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.03em;
+    main > section:first-of-type {
+      margin-top: 38px;
     }
 
     h2 {
@@ -99,10 +97,11 @@
       border-bottom: 1px solid var(--line);
       font-size: 22px;
       font-weight: 600;
+      letter-spacing: -0.03em;
     }
 
     h3 {
-      margin: 18px 0 4px;
+      margin: 32px 0 8px;
       color: var(--teal);
       font-size: 15px;
       font-weight: 700;
@@ -115,7 +114,7 @@
     }
 
     .scholar-link {
-      margin: 0 0 70px;
+      margin: 0 0 20px;
       font-size: 13px;
     }
 
@@ -126,9 +125,9 @@
 
     .publication {
       display: grid;
-      grid-template-columns: 48px 1fr;
-      column-gap: 16px;
-      padding: 17px 0 19px;
+      grid-template-columns: 54px 1fr;
+      column-gap: 18px;
+      padding: 20px 0;
       border-bottom: 1px solid var(--line);
     }
 
@@ -137,6 +136,8 @@
       color: var(--teal);
       font-size: 13px;
       font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
     }
 
     .citation {
@@ -201,9 +202,13 @@
         padding-top: 48px;
       }
 
+      main > section:first-of-type {
+        margin-top: 28px;
+      }
+
       .publication {
-        grid-template-columns: 34px 1fr;
-        column-gap: 10px;
+        grid-template-columns: 40px 1fr;
+        column-gap: 12px;
       }
 
       .citation {
@@ -233,21 +238,22 @@
     <section>
       <h2>Journal Publications</h2>
 
-    <p class="note">
-      † co-first author &nbsp; · &nbsp; * corresponding author
-    </p>
+      <p class="note">
+        † co-first author &nbsp; · &nbsp; * corresponding author
+      </p>
 
-    <p class="scholar-link">
-      <a href="https://scholar.google.com/citations?user=BurOm10AAAAJ&hl=en"
-         target="_blank">
-        View all publications on Google Scholar ↗
-      </a>
-    </p>
+      <p class="scholar-link">
+        <a href="https://scholar.google.com/citations?user=BurOm10AAAAJ&hl=en"
+           target="_blank">
+          View all publications on Google Scholar ↗
+        </a>
+      </p>
 
       <h3>2026</h3>
 
       <article class="publication">
         <div class="number">[12]</div>
+
         <div>
           <p class="citation">
             Xuejing Kang, Qian Yang, Sean Xiang Tang, Zhe Chen,
@@ -273,6 +279,7 @@
 
       <article class="publication">
         <div class="number">[11]</div>
+
         <div>
           <p class="citation">
             Minbeom Kim, Eunmok Yang, Yejin Liang,
@@ -296,6 +303,7 @@
 
       <article class="publication">
         <div class="number">[10]</div>
+
         <div>
           <p class="citation">
             Abdelilah Asserghine†, <span class="me">Soyoung Kim†</span>,
@@ -318,6 +326,7 @@
 
       <article class="publication">
         <div class="number">[9]</div>
+
         <div>
           <p class="citation">
             Yejin Liang, Minbeom Kim, Eunmok Yang,
@@ -343,6 +352,7 @@
 
       <article class="publication">
         <div class="number">[8]</div>
+
         <div>
           <p class="citation">
             Yejin Liang, Eunmok Yang, Minbeom Kim,
@@ -367,6 +377,7 @@
 
       <article class="publication">
         <div class="number">[7]</div>
+
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Yejin Liang,
@@ -387,6 +398,7 @@
 
       <article class="publication">
         <div class="number">[6]</div>
+
         <div>
           <p class="citation">
             Minbeom Kim, <span class="me">Soyoung Kim*</span>,
@@ -410,6 +422,7 @@
 
       <article class="publication">
         <div class="number">[5]</div>
+
         <div>
           <p class="citation">
             Yejin Liang, <span class="me">Soyoung Kim</span>,
@@ -432,6 +445,7 @@
 
       <article class="publication">
         <div class="number">[4]</div>
+
         <div>
           <p class="citation">
             Kristal A. S. Bornillo†, <span class="me">Soyoung Kim†</span>,
@@ -455,6 +469,7 @@
 
       <article class="publication">
         <div class="number">[3]</div>
+
         <div>
           <p class="citation">
             Yejin Liang, <span class="me">Soyoung Kim</span>,
@@ -475,6 +490,7 @@
 
       <article class="publication">
         <div class="number">[2]</div>
+
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Heechul Choi*.
@@ -495,6 +511,7 @@
 
       <article class="publication">
         <div class="number">[1]</div>
+
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Hosik Park,
@@ -520,6 +537,7 @@
 
       <article class="publication">
         <div class="number">[P3]</div>
+
         <div>
           <p class="citation">
             Heechul Choi, Yejin Liang,
@@ -538,6 +556,7 @@
 
       <article class="publication">
         <div class="number">[P2]</div>
+
         <div>
           <p class="citation">
             Heechul Choi, Yejin Liang,
@@ -556,6 +575,7 @@
 
       <article class="publication">
         <div class="number">[P1]</div>
+
         <div>
           <p class="citation">
             Heechul Choi, <span class="me">Soyoung Kim</span>.
