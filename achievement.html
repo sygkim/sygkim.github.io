@@ -184,6 +184,42 @@
       padding: 24px 0;
     }
 
+    .top-button {
+      position: fixed;
+      right: 28px;
+      bottom: 28px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #ffffff;
+      color: var(--teal);
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+      box-shadow: 0 4px 14px rgba(25, 45, 53, 0.12);
+      font-size: 21px;
+      font-weight: 600;
+      z-index: 1000;
+    }
+
+    .top-button.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .top-button:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #ffffff;
+    }
+
     @media (max-width: 650px) {
       nav {
         height: auto;
@@ -213,6 +249,14 @@
 
       .citation {
         font-size: 14px;
+      }
+
+      .top-button {
+        right: 18px;
+        bottom: 18px;
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
       }
     }
   </style>
@@ -253,7 +297,6 @@
 
       <article class="publication">
         <div class="number">[12]</div>
-
         <div>
           <p class="citation">
             Xuejing Kang, Qian Yang, Sean Xiang Tang, Zhe Chen,
@@ -261,14 +304,12 @@
             <span class="me">Soyoung Kim</span>, Yan Bai,
             Qian Li, Zhongbing Chen, Alexander Goroncy,
             Richard N. Zare, Maohong Fan.
-
             <a class="paper-title"
                href="https://doi.org/10.1039/D5GC04545B"
                target="_blank">
               “In Situ Photocatalytic Formation of Carbon Quantum Dots from
               Corn Stover via Interfacial Hydrogen Peroxide Generation.”
             </a>
-
             <span class="journal">Green Chemistry</span>,
             28(15), 6758–6768.
           </p>
@@ -279,13 +320,11 @@
 
       <article class="publication">
         <div class="number">[11]</div>
-
         <div>
           <p class="citation">
             Minbeom Kim, Eunmok Yang, Yejin Liang,
             <span class="me">Soyoung Kim</span>, Jaehyun Byun,
             Hyeonseo Kim, Heechul Choi.
-
             <a class="paper-title"
                href="https://doi.org/10.1021/acsami.4c00523"
                target="_blank">
@@ -293,7 +332,6 @@
               fluoride) Electrospun Nanofiber Hybrid Membrane for
               Simultaneous Removal of PM₀.₃ and SO₂.”
             </a>
-
             <span class="journal">
               ACS Applied Materials & Interfaces
             </span>, 16(12), 15348–15361.
@@ -303,13 +341,11 @@
 
       <article class="publication">
         <div class="number">[10]</div>
-
         <div>
           <p class="citation">
             Abdelilah Asserghine†, <span class="me">Soyoung Kim†</span>,
             Thomas P. Vaid, Armando Santiago-Carboney,
             Anne J. McNeil*, Joaquín Rodríguez-López*.
-
             <a class="paper-title"
                href="https://doi.org/10.1021/acsenergylett.4c00819"
                target="_blank">
@@ -317,7 +353,6 @@
               Flow Battery: From Single-Particle Interrogation to
               Battery Cycling.”
             </a>
-
             <span class="journal">ACS Energy Letters</span>,
             9(6), 2826–2831.
           </p>
@@ -326,14 +361,12 @@
 
       <article class="publication">
         <div class="number">[9]</div>
-
         <div>
           <p class="citation">
             Yejin Liang, Minbeom Kim, Eunmok Yang,
             Melati Septiyanti, <span class="me">Soyoung Kim</span>,
             Hyeonseo Kim, Jaehyun Byun,
             Kateryne Ccama Mamani, Heechul Choi.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.cej.2024.154087"
                target="_blank">
@@ -341,7 +374,6 @@
               for Directional Oil Transport and Oil Capture from Oil/Water
               Mixtures and Oil-in-Water Emulsions.”
             </a>
-
             <span class="journal">Chemical Engineering Journal</span>,
             496, 154087.
           </p>
@@ -352,13 +384,11 @@
 
       <article class="publication">
         <div class="number">[8]</div>
-
         <div>
           <p class="citation">
             Yejin Liang, Eunmok Yang, Minbeom Kim,
             <span class="me">Soyoung Kim</span>, Hyeonseo Kim,
             Jaehyun Byun, Numan Yanar, Heechul Choi.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.cej.2022.139710"
                target="_blank">
@@ -366,7 +396,6 @@
               Fluoride Nanofiber Membrane for Water-in-Oil Emulsion
               Separation and Antifouling Enhancement.”
             </a>
-
             <span class="journal">Chemical Engineering Journal</span>,
             452, 139710.
           </p>
@@ -377,19 +406,16 @@
 
       <article class="publication">
         <div class="number">[7]</div>
-
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Yejin Liang,
             Seoktae Kang, Heechul Choi.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.cej.2021.131601"
                target="_blank">
               “Solar-Assisted Smart Nanofibrous Membranes for Atmospheric
               Water Harvesting.”
             </a>
-
             <span class="journal">Chemical Engineering Journal</span>,
             425, 131601.
           </p>
@@ -398,12 +424,10 @@
 
       <article class="publication">
         <div class="number">[6]</div>
-
         <div>
           <p class="citation">
             Minbeom Kim, <span class="me">Soyoung Kim*</span>,
             Yu Chang Seong, Kwang-Hoon Yang, Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1021/acsanm.0c03040"
                target="_blank">
@@ -411,7 +435,6 @@
               Nanofiber Composite Membranes for Electromagnetic
               Interference Shielding.”
             </a>
-
             <span class="journal">ACS Applied Nano Materials</span>,
             4(1), 729–738.
           </p>
@@ -422,12 +445,10 @@
 
       <article class="publication">
         <div class="number">[5]</div>
-
         <div>
           <p class="citation">
             Yejin Liang, <span class="me">Soyoung Kim</span>,
             Eunmok Yang, Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1021/acsami.0c05559"
                target="_blank">
@@ -435,7 +456,6 @@
               Segregation of PDMS-Terminated Triblock Copolymer for
               High-Efficiency Oil/Water Emulsion Separation.”
             </a>
-
             <span class="journal">
               ACS Applied Materials & Interfaces
             </span>, 12(22), 25324–25333.
@@ -445,12 +465,10 @@
 
       <article class="publication">
         <div class="number">[4]</div>
-
         <div>
           <p class="citation">
             Kristal A. S. Bornillo†, <span class="me">Soyoung Kim†</span>,
             Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.chemosphere.2019.125287"
                target="_blank">
@@ -458,7 +476,6 @@
               Polyethersulfone-Poly(dimethyl amino)ethyl Methacrylate
               Blend Nanofibers.”
             </a>
-
             <span class="journal">Chemosphere</span>,
             242, 125287.
           </p>
@@ -469,19 +486,16 @@
 
       <article class="publication">
         <div class="number">[3]</div>
-
         <div>
           <p class="citation">
             Yejin Liang, <span class="me">Soyoung Kim</span>,
             Parashuram Kallem, Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.chemosphere.2019.01.048"
                target="_blank">
               “Capillary Effect in Janus Electrospun Nanofiber Membrane
               for Oil/Water Emulsion Separation.”
             </a>
-
             <span class="journal">Chemosphere</span>,
             221, 479–485.
           </p>
@@ -490,18 +504,15 @@
 
       <article class="publication">
         <div class="number">[2]</div>
-
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1021/acssuschemeng.9b05273"
                target="_blank">
               “Switchable Wettability of Thermoresponsive Core–Shell
               Nanofibers for Water Capture and Release.”
             </a>
-
             <span class="journal">
               ACS Sustainable Chemistry & Engineering
             </span>, 7(24), 19870–19879.
@@ -511,19 +522,16 @@
 
       <article class="publication">
         <div class="number">[1]</div>
-
         <div>
           <p class="citation">
             <span class="me">Soyoung Kim</span>, Hosik Park,
             Heechul Choi*.
-
             <a class="paper-title"
                href="https://doi.org/10.1016/j.micromeso.2019.02.037"
                target="_blank">
               “Maneuvering the Ordered Mesoporosity of Electrospun Silica
               Nanofibers for Water Harvesting.”
             </a>
-
             <span class="journal">
               Microporous and Mesoporous Materials
             </span>, 281, 23–31.
@@ -537,18 +545,15 @@
 
       <article class="publication">
         <div class="number">[P3]</div>
-
         <div>
           <p class="citation">
             Heechul Choi, Yejin Liang,
             <span class="me">Soyoung Kim</span>.
-
             <a class="paper-title"
                href="https://patents.google.com/patent/US11554349B2/en"
                target="_blank">
               “Nanofiber Structure and Method for Producing the Same.”
             </a>
-
             US11554349B2.
           </p>
         </div>
@@ -556,18 +561,15 @@
 
       <article class="publication">
         <div class="number">[P2]</div>
-
         <div>
           <p class="citation">
             Heechul Choi, Yejin Liang,
             <span class="me">Soyoung Kim</span>.
-
             <a class="paper-title"
                href="https://patents.google.com/patent/KR102370737B1/en"
                target="_blank">
               “Nanofiber Structure and Method for Producing the Same.”
             </a>
-
             KR102370737B1.
           </p>
         </div>
@@ -575,18 +577,15 @@
 
       <article class="publication">
         <div class="number">[P1]</div>
-
         <div>
           <p class="citation">
             Heechul Choi, <span class="me">Soyoung Kim</span>.
-
             <a class="paper-title"
                href="https://patents.google.com/patent/KR102245836B1/en"
                target="_blank">
               “Temperature Responsive Copolymer, Nanofiber Structure and
               Method for Producing the Same.”
             </a>
-
             KR102245836B1.
           </p>
         </div>
@@ -597,5 +596,28 @@
   <footer>
     <div>© 2026 Soyoung Kim</div>
   </footer>
+
+  <button class="top-button" id="topButton" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script>
+    const topButton = document.getElementById("topButton");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 350) {
+        topButton.classList.add("show");
+      } else {
+        topButton.classList.remove("show");
+      }
+    });
+
+    topButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
 </html>
