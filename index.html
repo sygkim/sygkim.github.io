@@ -12,8 +12,6 @@
 
   <style>
     :root {
-      --ink: #192d35;
-      --muted: #607078;
       --line: #dce5e7;
       --teal: #087278;
     }
@@ -28,7 +26,6 @@
       display: flex;
       flex-direction: column;
       background: #ffffff;
-      color: var(--ink);
       font-family: "Poppins", Arial, sans-serif;
     }
 
@@ -81,42 +78,23 @@
       flex: 1;
       width: min(1180px, 92%);
       margin: 0 auto;
-      padding: 34px 0 26px;
+      padding: 30px 0;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
-
-    .hero-title {
-      max-width: 850px;
-      margin: 0 0 24px;
-      color: var(--ink);
-      text-align: center;
-      font-size: clamp(21px, 2.2vw, 30px);
-      font-weight: 600;
-      letter-spacing: -0.035em;
-      line-height: 1.35;
-    }
-
-    .hero-subtitle {
-      margin: 0 0 28px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 14px;
     }
 
     .hero-image {
       width: 100%;
       max-width: 1180px;
-      max-height: calc(100vh - 275px);
+      max-height: calc(100vh - 170px);
       display: block;
       object-fit: contain;
     }
 
     footer {
       border-top: 1px solid var(--line);
-      color: var(--muted);
+      color: #607078;
       font-size: 12px;
     }
 
@@ -146,17 +124,7 @@
 
       main {
         width: min(100%, 92%);
-        padding: 38px 0 32px;
-      }
-
-      .hero-title {
-        margin-bottom: 18px;
-        font-size: 22px;
-      }
-
-      .hero-subtitle {
-        margin-bottom: 24px;
-        font-size: 13px;
+        padding: 32px 0;
       }
 
       .hero-image {
@@ -181,22 +149,13 @@
   </header>
 
   <main>
-    <h1 class="hero-title">
-      Engineering Materials and Flow Systems<br>
-      for a Cleaner Water–Energy Future.
-    </h1>
-
-    <p class="hero-subtitle">
-      Functional materials and electrochemical flow systems for sustainable infrastructure.
-    </p>
-
     <img class="hero-image"
          src="assets/images/art2.jpg"
-         alt="Functional materials, water treatment, resource recovery, and sustainable energy illustration">
+         alt="Research artwork for sustainable water and energy systems">
   </main>
 
   <footer>
-    <div>© 2026 Soyoung Kim</div>
+    <div>© 2026 Soyoung Gabriel Kim</div>
   </footer>
 </body>
 </html>
